@@ -1,24 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iVa-9G-ipS">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Report" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a6s-HJ-kBI">
+                                <rect key="frame" x="0.0" y="251" width="393" height="567"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="P77-Kh-pKd"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zn5-xh-59j"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQX-Ho-tKN">
+                                <rect key="frame" x="16" y="118" width="361" height="107"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaR-Eg-69O">
+                                        <rect key="frame" x="8" y="7.9999999999999991" width="287" height="15.666666666666664"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="We're updated our reporting flow for clarity">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="Arial-BoldMT"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4tW-HC-UKf">
+                                        <rect key="frame" x="8" y="52" width="345" height="47"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Reporting other users not be taken lightly, so please take a moment to review the options. If you have any feedback, please reach out to us by</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="emailing support">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.052941193436629064" blue="0.82633410511647276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4B-sM-Q6s">
+                                        <rect key="frame" x="314.66666666666669" y="0.0" width="46.333333333333314" height="34.333333333333336"/>
+                                        <color key="tintColor" systemColor="systemGray2Color"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="didClickOnCloseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggt-Bs-4TV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="e4B-sM-Q6s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oaR-Eg-69O" secondAttribute="trailing" constant="10" id="BCg-Mt-7ZC"/>
+                                    <constraint firstAttribute="trailing" secondItem="e4B-sM-Q6s" secondAttribute="trailing" id="C39-EL-LWX"/>
+                                    <constraint firstItem="oaR-Eg-69O" firstAttribute="top" secondItem="mQX-Ho-tKN" secondAttribute="top" constant="8" id="DOc-YA-Vsg"/>
+                                    <constraint firstItem="4tW-HC-UKf" firstAttribute="leading" secondItem="mQX-Ho-tKN" secondAttribute="leading" constant="8" id="GYp-fG-aRc"/>
+                                    <constraint firstItem="oaR-Eg-69O" firstAttribute="leading" secondItem="mQX-Ho-tKN" secondAttribute="leading" constant="8" id="Lwp-We-zvc"/>
+                                    <constraint firstItem="e4B-sM-Q6s" firstAttribute="top" secondItem="mQX-Ho-tKN" secondAttribute="top" id="att-rm-Xdb"/>
+                                    <constraint firstAttribute="bottom" secondItem="4tW-HC-UKf" secondAttribute="bottom" constant="8" id="bHd-av-5Gp"/>
+                                    <constraint firstItem="4tW-HC-UKf" firstAttribute="top" secondItem="oaR-Eg-69O" secondAttribute="bottom" constant="28.333333333333321" id="div-IV-tCh"/>
+                                    <constraint firstAttribute="trailing" secondItem="4tW-HC-UKf" secondAttribute="trailing" constant="8" id="xmQ-kN-vhf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mQX-Ho-tKN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KX8-dX-hiQ"/>
+                            <constraint firstItem="a6s-HJ-kBI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MSI-Ka-Der"/>
+                            <constraint firstItem="a6s-HJ-kBI" firstAttribute="top" secondItem="mQX-Ho-tKN" secondAttribute="bottom" constant="26" id="Ox3-aE-otX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mQX-Ho-tKN" secondAttribute="trailing" constant="16" id="eg6-Oo-YZo"/>
+                            <constraint firstItem="a6s-HJ-kBI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fNT-qD-SDF"/>
+                            <constraint firstItem="a6s-HJ-kBI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="148" id="lSv-eH-X7q"/>
+                            <constraint firstItem="a6s-HJ-kBI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nFt-Dx-SJT"/>
+                            <constraint firstItem="mQX-Ho-tKN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="oT8-iC-Oel"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sko-am-QAj"/>
+                    <connections>
+                        <outlet property="tableView" destination="a6s-HJ-kBI" id="LIt-0Y-HSe"/>
+                        <outlet property="tableViewTopConstraint" destination="lSv-eH-X7q" id="7za-2P-F6k"/>
+                        <outlet property="warningView" destination="mQX-Ho-tKN" id="aXJ-4y-AEw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sqG-39-XZH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iVa-9G-ipS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="31t-hZ-KLb">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="compactAppearance">
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="compactScrollEdgeAppearance">
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4YF-r1-Jhf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hn1-ZV-cgT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

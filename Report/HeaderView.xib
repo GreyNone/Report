@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="349" height="269"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhB-rc-WIP">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhB-rc-WIP">
                     <rect key="frame" x="37" y="195.66666666666666" width="272" height="29.333333333333343"/>
                     <attributedString key="attributedText">
                         <fragment content="Your report is anonymous and helps make sure the community stays healthy and safe">
@@ -36,20 +36,23 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.octagon.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tyX-qI-HaI">
                     <rect key="frame" x="147" y="69" width="55" height="67"/>
                     <color key="tintColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68.666666666666671" id="NBs-dg-oCI"/>
+                        <constraint firstAttribute="width" constant="55" id="Vui-sa-1in"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="tyX-qI-HaI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="9" id="5VJ-xb-fv7"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tyX-qI-HaI" secondAttribute="trailing" constant="147" id="Apb-9Z-BOM"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AhB-rc-WIP" secondAttribute="trailing" constant="40" id="Egg-2o-pu4"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AhB-rc-WIP" secondAttribute="bottom" constant="10" id="N5U-Rf-ptg"/>
-                <constraint firstItem="tyX-qI-HaI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="147" id="Uzj-vO-IAD"/>
                 <constraint firstItem="AhB-rc-WIP" firstAttribute="top" secondItem="5VS-Wo-ass" secondAttribute="bottom" constant="10" id="Xbv-Lt-mKW"/>
                 <constraint firstItem="5VS-Wo-ass" firstAttribute="top" secondItem="tyX-qI-HaI" secondAttribute="bottom" constant="8.3300000000000001" id="baM-cX-ggh"/>
                 <constraint firstItem="AhB-rc-WIP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="37" id="c10-EE-J4l"/>
                 <constraint firstItem="5VS-Wo-ass" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="66" id="hic-pf-tKp"/>
+                <constraint firstItem="tyX-qI-HaI" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="whA-Vf-Kdc"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5VS-Wo-ass" secondAttribute="trailing" constant="68" id="xF1-eq-kwd"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
