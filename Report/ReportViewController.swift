@@ -16,8 +16,8 @@ class ReportViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.descriptionLabel.text = reportDescription
         self.reportNameLabel.text = reportName
-        // Do any additional setup after loading the view.
     }
 }
