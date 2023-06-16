@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F33EFD722A3B10E9009DC911 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33EFD702A3B10E9009DC911 /* ReportViewController.swift */; };
-		F33EFD732A3B10E9009DC911 /* ReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F33EFD712A3B10E9009DC911 /* ReportViewController.xib */; };
 		F33EFD762A3B13EF009DC911 /* HeadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33EFD742A3B13EF009DC911 /* HeadTableViewCell.swift */; };
 		F33EFD772A3B13EF009DC911 /* HeadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F33EFD752A3B13EF009DC911 /* HeadTableViewCell.xib */; };
 		F33EFD7A2A3B1482009DC911 /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33EFD782A3B1482009DC911 /* OptionTableViewCell.swift */; };
 		F33EFD7B2A3B1482009DC911 /* OptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F33EFD792A3B1482009DC911 /* OptionTableViewCell.xib */; };
 		F33EFD7D2A3B19DF009DC911 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33EFD7C2A3B19DF009DC911 /* Data.swift */; };
+		F33EFD7F2A3B408C009DC911 /* ReportStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33EFD7E2A3B408C009DC911 /* ReportStoryboard.storyboard */; };
 		F3A2DD932A39EE3E0015734A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2DD922A39EE3E0015734A /* AppDelegate.swift */; };
 		F3A2DD952A39EE3E0015734A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2DD942A39EE3E0015734A /* SceneDelegate.swift */; };
 		F3A2DD972A39EE3E0015734A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2DD962A39EE3E0015734A /* ViewController.swift */; };
@@ -26,12 +26,12 @@
 
 /* Begin PBXFileReference section */
 		F33EFD702A3B10E9009DC911 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
-		F33EFD712A3B10E9009DC911 /* ReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportViewController.xib; sourceTree = "<group>"; };
 		F33EFD742A3B13EF009DC911 /* HeadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadTableViewCell.swift; sourceTree = "<group>"; };
 		F33EFD752A3B13EF009DC911 /* HeadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadTableViewCell.xib; sourceTree = "<group>"; };
 		F33EFD782A3B1482009DC911 /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
 		F33EFD792A3B1482009DC911 /* OptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionTableViewCell.xib; sourceTree = "<group>"; };
 		F33EFD7C2A3B19DF009DC911 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F33EFD7E2A3B408C009DC911 /* ReportStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReportStoryboard.storyboard; sourceTree = "<group>"; };
 		F3A2DD8F2A39EE3E0015734A /* Report.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Report.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A2DD922A39EE3E0015734A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3A2DD942A39EE3E0015734A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 				F3A2DDA82A39FD0D0015734A /* HeaderView.swift */,
 				F3A2DDA62A39F99F0015734A /* HeaderView.xib */,
 				F33EFD702A3B10E9009DC911 /* ReportViewController.swift */,
-				F33EFD712A3B10E9009DC911 /* ReportViewController.xib */,
+				F33EFD7E2A3B408C009DC911 /* ReportStoryboard.storyboard */,
 				F33EFD742A3B13EF009DC911 /* HeadTableViewCell.swift */,
 				F33EFD752A3B13EF009DC911 /* HeadTableViewCell.xib */,
 				F33EFD782A3B1482009DC911 /* OptionTableViewCell.swift */,
@@ -152,13 +152,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F33EFD732A3B10E9009DC911 /* ReportViewController.xib in Resources */,
 				F3A2DD9F2A39EE3F0015734A /* LaunchScreen.storyboard in Resources */,
 				F33EFD7B2A3B1482009DC911 /* OptionTableViewCell.xib in Resources */,
 				F3A2DD9C2A39EE3F0015734A /* Assets.xcassets in Resources */,
 				F3A2DD9A2A39EE3E0015734A /* Main.storyboard in Resources */,
 				F3A2DDA72A39F99F0015734A /* HeaderView.xib in Resources */,
 				F33EFD772A3B13EF009DC911 /* HeadTableViewCell.xib in Resources */,
+				F33EFD7F2A3B408C009DC911 /* ReportStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

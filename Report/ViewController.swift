@@ -18,15 +18,6 @@ class ViewController: UIViewController {
 
         self.title = "Report"
        
-        let appereance = UINavigationBarAppearance()
-        appereance.backgroundColor = .systemPurple
-        appereance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        
-//        UINavigationBar.appearance().tintColor = .white
-//        UINavigationBar.appearance().standardAppearance = appereance
-//        UINavigationBar.appearance().compactAppearance = appereance
-//        UINavigationBar.appearance().scrollEdgeAppearance = appereance
-        
         tableView.register(HeadTableViewCell.nib, forCellReuseIdentifier: HeadTableViewCell.identifier)
         tableView.register(OptionTableViewCell.nib, forCellReuseIdentifier: OptionTableViewCell.identifier)
     }
@@ -51,16 +42,24 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 || indexPath.row == 5 || indexPath.row == 8 {
             let cell = tableView.dequeueReusableCell(withIdentifier: HeadTableViewCell.identifier) as! HeadTableViewCell
-            cell.descriptionLabel.text = Reports.allCases[indexPath.row].rawValue
+            cell.descriptionLabel.text = Reports.allCases[indexPath.row].name
+            cell.isUserInteractionEnabled = false
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: OptionTableViewCell.identifier) as! OptionTableViewCell
-            cell.descriptionLabel.text = Reports.allCases[indexPath.row].rawValue
+            cell.descriptionLabel.text = Reports.allCases[indexPath.row].name
             return cell
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let reportStoryboard = UIStoryboard(name: "ReportStoryboard", bundle: nil)
+        let reportViewController = reportStoryboard.instantiateViewController(withIdentifier: "ReportViewController") as! ReportViewController
+        reportViewController.reportDescription = Reports.allCases[indexPath.row].description
+        reportViewController.reportName = Reports.allCases[indexPath.row].name
+        
+        self.navigationController?.pushViewController(reportViewController, animated: true)
     }
 }

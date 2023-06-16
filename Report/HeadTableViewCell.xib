@@ -22,7 +22,7 @@
                             <fragment content="It's offensive and disrespectful">
                                 <attributes>
                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <font key="NSFont" size="17" name="Arial-BoldMT"/>
+                                    <font key="NSFont" size="15" name="Arial-BoldMT"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
