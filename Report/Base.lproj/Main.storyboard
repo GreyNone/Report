@@ -25,10 +25,10 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQX-Ho-tKN">
-                                <rect key="frame" x="16" y="118" width="361" height="107"/>
+                                <rect key="frame" x="16" y="113" width="361" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaR-Eg-69O">
-                                        <rect key="frame" x="8" y="7.9999999999999991" width="287" height="15.666666666666664"/>
+                                        <rect key="frame" x="8" y="8" width="287" height="36.666666666666664"/>
                                         <attributedString key="attributedText">
                                             <fragment content="We're updated our reporting flow for clarity">
                                                 <attributes>
@@ -39,8 +39,8 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4tW-HC-UKf">
-                                        <rect key="frame" x="8" y="52" width="345" height="47"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4tW-HC-UKf">
+                                        <rect key="frame" x="8" y="73" width="345" height="47"/>
                                         <attributedString key="attributedText">
                                             <fragment>
                                                 <string key="content">Reporting other users not be taken lightly, so please take a moment to review the options. If you have any feedback, please reach out to us by</string>
@@ -101,12 +101,12 @@
                         <constraints>
                             <constraint firstItem="mQX-Ho-tKN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KX8-dX-hiQ"/>
                             <constraint firstItem="a6s-HJ-kBI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MSI-Ka-Der"/>
-                            <constraint firstItem="a6s-HJ-kBI" firstAttribute="top" secondItem="mQX-Ho-tKN" secondAttribute="bottom" constant="26" id="Ox3-aE-otX"/>
+                            <constraint firstItem="a6s-HJ-kBI" firstAttribute="top" secondItem="mQX-Ho-tKN" secondAttribute="bottom" constant="10" id="Ox3-aE-otX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mQX-Ho-tKN" secondAttribute="trailing" constant="16" id="eg6-Oo-YZo"/>
                             <constraint firstItem="a6s-HJ-kBI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fNT-qD-SDF"/>
                             <constraint firstItem="a6s-HJ-kBI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="148" id="lSv-eH-X7q"/>
                             <constraint firstItem="a6s-HJ-kBI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nFt-Dx-SJT"/>
-                            <constraint firstItem="mQX-Ho-tKN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="oT8-iC-Oel"/>
+                            <constraint firstItem="mQX-Ho-tKN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="oT8-iC-Oel"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sko-am-QAj"/>

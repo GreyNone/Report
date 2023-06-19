@@ -21,10 +21,9 @@ class ReportViewController: UIViewController {
         
         self.descriptionLabel.text = reportDescription
         self.reportNameLabel.text = reportName
-        
         if let steps = steps {
             for step in steps {
-                stackView.addSubview(step)
+                stackView.addArrangedSubview(step)
             }
         }
     }
