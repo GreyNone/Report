@@ -11,6 +11,6 @@ import UIKit
 class HeaderView: UIView {
     
     class func instanceFromNib() -> UIView {
-        return UINib(nibName: "HeaderView", bundle: nil).instantiate(withOwner: nil)[0] as! UIView
+        return UINib(nibName: "HeaderView", bundle: nil).instantiate(withOwner: nil)[0] as! HeaderView
     }
 }

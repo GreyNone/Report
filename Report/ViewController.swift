@@ -59,6 +59,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let reportViewController = reportStoryboard.instantiateViewController(withIdentifier: "ReportViewController") as! ReportViewController
         reportViewController.reportDescription = Reports.allCases[indexPath.row].description
         reportViewController.reportName = Reports.allCases[indexPath.row].name
+        reportViewController.steps = Reports.allCases[indexPath.row].steps
         
         self.navigationController?.pushViewController(reportViewController, animated: true)
     }
