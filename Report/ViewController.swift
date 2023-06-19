@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
     @IBAction func didClickOnCloseButton(_ sender: Any) {
         warningView.removeFromSuperview()
-        tableViewTopConstraint.constant = 10
+        tableViewTopConstraint.constant = 0
         tableView.updateConstraints()
     }
 }
