@@ -74,29 +74,29 @@ enum Reports: String, CaseIterable {
     var steps: [StepsView] {
         switch self {
         case .excessivelyNegative:
-            let firstStepView = StepsView.instanceFromNib() as! StepsView
+            guard let firstStepView = StepsView.instanceFromNib() as? StepsView else { return [StepsView]() }
             firstStepView.headLabel.text = "Drawing a line between honesty and negativity"
             firstStepView.descriptionLabel.text = "Kindly let the author know when their negativity has crossed a line into disrupting a productive conversation or is derailing the community"
             
-            let secondStepView = StepsView.instanceFromNib() as! StepsView
+            guard let secondStepView = StepsView.instanceFromNib() as? StepsView else { return [StepsView]() }
             secondStepView.headLabel.text = "Steer the conversation back"
             secondStepView.descriptionLabel.text = "Reset the conversation back to the original subject and purpose"
             
             let steps = Array([firstStepView,secondStepView])
             return steps
         case .spam:
-            let firstStepView = StepsView.instanceFromNib() as! StepsView
+            guard let firstStepView = StepsView.instanceFromNib() as? StepsView else { return [StepsView]() }
             firstStepView.headLabel.text = "Suggest a more relevant Bowl"
             firstStepView.descriptionLabel.text = "Fishbowl has many communities, including social topics and referrals.If you know a Bowl that is better suited for this conversation, suggest it kindly to the author"
             
             let steps = Array([firstStepView])
             return steps
         default:
-            let firstStepView = StepsView.instanceFromNib() as! StepsView
+            guard let firstStepView = StepsView.instanceFromNib() as? StepsView else { return [StepsView]() }
             firstStepView.headLabel.text = "Drawing a line between honesty and negativity"
             firstStepView.descriptionLabel.text = "Kindly let the author know when their negativity has crossed a line into disrupting a productive conversation or is derailing the community"
             
-            let secondStepView = StepsView.instanceFromNib() as! StepsView
+            guard let secondStepView = StepsView.instanceFromNib() as? StepsView else { return [StepsView]() }
             secondStepView.headLabel.text = "Steer the conversation back"
             secondStepView.descriptionLabel.text = "Reset the conversation back to the original subject and purpose"
             

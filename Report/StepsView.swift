@@ -14,6 +14,7 @@ class StepsView: UIView {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     class func instanceFromNib() -> UIView {
-        return UINib(nibName: "StepsView", bundle: nil).instantiate(withOwner: nil)[0] as! UIView
+        guard let view = UINib(nibName: "StepsView", bundle: nil).instantiate(withOwner: nil)[0] as? UIView else { return UIView() }
+        return view
     }
 }

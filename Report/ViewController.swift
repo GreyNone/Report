@@ -41,12 +41,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 || indexPath.row == 5 || indexPath.row == 8 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: HeadTableViewCell.identifier) as! HeadTableViewCell
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: HeadTableViewCell.identifier) as? HeadTableViewCell else { return HeadTableViewCell() }
             cell.descriptionLabel.text = Reports.allCases[indexPath.row].name
             cell.isUserInteractionEnabled = false
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: OptionTableViewCell.identifier) as! OptionTableViewCell
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: OptionTableViewCell.identifier) as? OptionTableViewCell else { return OptionTableViewCell() }
             cell.descriptionLabel.text = Reports.allCases[indexPath.row].name
             return cell
         }
@@ -56,7 +56,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let reportStoryboard = UIStoryboard(name: "ReportStoryboard", bundle: nil)
-        let reportViewController = reportStoryboard.instantiateViewController(withIdentifier: "ReportViewController") as! ReportViewController
+        guard let reportViewController = reportStoryboard.instantiateViewController(withIdentifier: "ReportViewController") as? ReportViewController else { return }
         reportViewController.reportDescription = Reports.allCases[indexPath.row].description
         reportViewController.reportName = Reports.allCases[indexPath.row].name
         reportViewController.steps = Reports.allCases[indexPath.row].steps
